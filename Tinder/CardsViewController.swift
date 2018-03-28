@@ -37,15 +37,17 @@ class CardsViewController: UIViewController {
             cardCenter = card.center
         } else if sender.state == .changed {
             print("Gesture is changing")
-            card.center = CGPoint(x: cardCenter.x + translation.x, y: cardInitialCenter.y)
+            card.center = CGPoint(x: cardCenter.x + translation.x, y: cardCenter.y)
 
             //card.transform = CGAffineTransform()
             
-           // card.transform = view.transform.rotated(by angle: CGFloat(45 * M_PI / 180))
-
+           //card.transform = view.transform.rotated(by: CGFloat(M_PI / 180))
+            
         } else if sender.state == .ended {
             print("Gesture ended")
-            card.transform = cardInitialCenter        }
+            //card.transform = CGAffineTransform.identity
+            //card.center = cardInitialCenter
+        }
     }
 
     /*

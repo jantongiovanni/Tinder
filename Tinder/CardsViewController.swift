@@ -36,6 +36,9 @@ class CardsViewController: UIViewController {
         print(location.x)
         print(location.y)
     }
+    @IBAction func didTapCard(_ sender: UITapGestureRecognizer) {
+        performSegue(withIdentifier: "cardTap", sender: self)
+    }
     
     @IBAction func didMoveCard(_ sender: UIPanGestureRecognizer) {
         let translation = sender.translation(in: view)

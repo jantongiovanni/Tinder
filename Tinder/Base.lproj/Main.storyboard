@@ -32,6 +32,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="88t-nc-avw" appends="YES" id="g6J-co-oNg"/>
+                                    <outletCollection property="gestureRecognizers" destination="DOD-49-R1v" appends="YES" id="J1k-LU-TIy"/>
                                 </connections>
                             </imageView>
                         </subviews>
@@ -39,6 +40,7 @@
                     </view>
                     <connections>
                         <outlet property="card" destination="RxT-8r-Vwb" id="UdT-bJ-4p0"/>
+                        <segue destination="zMd-3z-2Px" kind="show" identifier="cardTap" id="WXC-by-VXC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yx2-BP-dae" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -47,13 +49,59 @@
                         <action selector="didMoveCard:" destination="ZLh-hU-68b" id="9er-cd-YIK"/>
                     </connections>
                 </panGestureRecognizer>
+                <tapGestureRecognizer id="DOD-49-R1v">
+                    <connections>
+                        <action selector="didTapCard:" destination="ZLh-hU-68b" id="1SQ-15-eN0"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-211.59420289855075" y="11.413043478260871"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="FFt-jG-lRe">
+            <objects>
+                <viewController id="zMd-3z-2Px" customClass="ProfileViewController" customModule="Tinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DPe-85-oUJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="0Vt-FR-UVW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xgs-dD-WcV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ryan" translatesAutoresizingMaskIntoConstraints="NO" id="c4k-VY-t3O">
+                                <frame key="frameInset" minX="10" minY="91" width="393" height="522"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" image="nav_bar2" translatesAutoresizingMaskIntoConstraints="NO" id="skO-q2-Tuc">
+                                <frame key="frameInset" width="414" height="83"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="QnR-Va-Ukv" appends="YES" id="yea-g9-xTT"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="ZLh-hU-68b" kind="show" identifier="tappedDone" id="rVF-kx-Lb5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lyc-Mt-8a3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="QnR-Va-Ukv">
+                    <connections>
+                        <action selector="didTapDone:" destination="zMd-3z-2Px" id="OiV-mw-2jT"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="498.55072463768118" y="13.858695652173914"/>
         </scene>
     </scenes>
     <resources>
         <image name="action_buttons" width="320" height="108"/>
         <image name="nav_bar" width="320" height="65"/>
+        <image name="nav_bar2" width="320" height="65"/>
         <image name="ryan" width="449" height="514"/>
     </resources>
 </document>

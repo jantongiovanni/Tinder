@@ -17,6 +17,7 @@
 		D829C0E2206B494C0001F766 /* TinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D829C0E1206B494C0001F766 /* TinderTests.swift */; };
 		D829C0ED206B494C0001F766 /* TinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D829C0EC206B494C0001F766 /* TinderUITests.swift */; };
 		D829C0FB206B4BB10001F766 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D829C0FA206B4BB10001F766 /* CardsViewController.swift */; };
+		D829C0FD207202DB0001F766 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D829C0FC207202DB0001F766 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		D829C0EC206B494C0001F766 /* TinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderUITests.swift; sourceTree = "<group>"; };
 		D829C0EE206B494C0001F766 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D829C0FA206B4BB10001F766 /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
+		D829C0FC207202DB0001F766 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		DAF2CBF8A8C6DF9F86537772 /* Pods_Tinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1C384DC5E99752E4304A222 /* Pods_TinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFABE996E1F7E49899EE097D /* Pods-TinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TinderTests/Pods-TinderTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 			children = (
 				D829C0CC206B494C0001F766 /* AppDelegate.swift */,
 				D829C0D0206B494C0001F766 /* Main.storyboard */,
+				D829C0FC207202DB0001F766 /* ProfileViewController.swift */,
 				D829C0FA206B4BB10001F766 /* CardsViewController.swift */,
 				D829C0D3206B494C0001F766 /* Assets.xcassets */,
 				D829C0D5206B494C0001F766 /* LaunchScreen.storyboard */,
@@ -455,6 +458,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D829C0FD207202DB0001F766 /* ProfileViewController.swift in Sources */,
 				D829C0FB206B4BB10001F766 /* CardsViewController.swift in Sources */,
 				D829C0CD206B494C0001F766 /* AppDelegate.swift in Sources */,
 			);
